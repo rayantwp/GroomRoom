@@ -7,79 +7,81 @@
     <title>GroomRoom - Home</title>
   </head>
   <body>
-    <div class="main">
-      <div class="header">
-        <div class="logo">
-          <div class="logo-title">
-            <h1>GROOMING</h1>
-            <p>Service for dogs and cats</p>
+    <div id="app">
+      <div class="main">
+        <div class="header">
+          <div class="logo">
+            <div class="logo-title">
+              <h1>GROOMING</h1>
+              <p>Service for dogs and cats</p>
+            </div>
+          </div>
+          <div class="nav-menu">
+            <a href="index.html">
+              <img class="icon" src="icon/home.png" />
+              Главная</a
+            >
+            <a href="login.html">
+              <img class="icon" src="icon/key.png" />
+              Вход</a
+            >
           </div>
         </div>
-        <div class="nav-menu">
-          <a href="index.html">
-            <img class="icon" src="icon/home.png" />
-            Главная</a
-          >
-          <a href="login.html">
-            <img class="icon" src="icon/key.png" />
-            Вход</a
-          >
+        <hr />
+        <div class="first-section">
+          <div class="section-left">
+            <p>
+              Профессиональная укладка<br />
+              для ваших домашних<br />
+              питомцев
+            </p>
+          </div>
+          <div class="section-right">
+            <div class="form-box">
+              <p>Создайте заявку</p>
+              <form action="">
+                <input
+                  type="text"
+                  v-bind:value="valueName"
+                  v-on:input="inputName"
+                  placeholder="Как зовут вашего питомца?"
+                />
+                <input
+                  type="text"
+                  v-bind:value="valueService"
+                  v-on:input="inputService"
+                  placeholder="Услуга"
+                />
+                <button type="button" v-on:click="submissionForm">
+                  <p>Записаться</p>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="second-section">
+          <div class="title-second-section">
+            <p>Наши работы</p>
+          </div>
+          <div class="parent">
+            <div class="dog" v-for="myjobs in parents">
+              <img :src="myjobs.img" class="dog-pictures" />
+              <div class="name-project"><p>{{myjobs.nickname}}</p></div>
+              <select>
+                <option>
+                  <div class="service">Услуга: <b>{{myjobs.service}}</b></div>
+                </option>
+              </select>
+              <div class="status"><p>{{myjobs.status}}</p></div>
+            </div>
+          </div>
         </div>
       </div>
-      <hr />
-      <div class="first-section">
-        <div class="section-left">
-          <p>
-            Профессиональная укладка<br />
-            для ваших домашних<br />
-            питомцев
-          </p>
-        </div>
-        <div class="section-right">
-          <div class="form-box">
-            <p>Создайте заявку</p>
-            <div id="form">
-              <input type="text" placeholder="Текстовое поле" />
-            </div>
-            <div id="form">
-              <input type="text" placeholder="Текстовое поле" />
-            </div>
-            <button type="submit">
-              <p>Записаться</p>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="second-section">
-        <div class="title-second-section">
-          <p>Наши работы</p>
-        </div>
-        <div class="dog-parent">
-          <div class="dog">
-            <img class="dog-pictures" src="img/image2.png" />
-            <p>Dog #1</p>
-          </div>
-          <div class="dog">
-            <img class="dog-pictures" src="img/image2.png" />
-            <p>Dog #1</p>
-          </div>
-          <div class="dog">
-            <img class="dog-pictures" src="img/image2.png" />
-            <p>Dog #1</p>
-          </div>
-          <div class="dog">
-            <img class="dog-pictures" src="img/image2.png" />
-            <p>Dog #1</p>
-          </div>
-          <div class="dog">
-            <img class="dog-pictures" src="img/image2.png" />
-            <p>Dog #1</p>
-          </div>
-        </div>
+      <div class="footer">
+        <p>groom-salon.com 2000-2999</p>
       </div>
     </div>
-    <div class="footer">
-      <p>groom-salon.com 2000-2999</p>
-    </div>
+    <script src="js/script.js"></script>
+    <script src="js/vue.js"></script>
   </body>
 </html>

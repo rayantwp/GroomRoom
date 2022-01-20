@@ -136,6 +136,11 @@ hr {
   justify-content: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   width: 260px;
   height: 48px;
@@ -184,7 +189,7 @@ button p {
   font-size: 32px;
 }
 
-.dog-parent {
+.parent {
   display: flex;
   margin-top: 55px;
   justify-content: center;
@@ -201,14 +206,12 @@ button p {
   display: flex;
   position: relative;
   flex-direction: column;
-}
-
-.dog p {
-  padding: 8px;
+  align-items: center;
 }
 
 .dog-pictures {
-  padding: 8px;
+  height: 184px;
+  padding: 15px;
   border-radius: 8px;
 }
 
