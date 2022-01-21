@@ -31,27 +31,15 @@
         <div class="first-section">
           <div class="section-left">
             <p>
-              Профессиональная укладка<br />
-              для ваших домашних<br />
-              питомцев
+              Профессиональная укладка<br />для ваших домашних<br />питомцев
             </p>
           </div>
           <div class="section-right">
             <div class="form-box">
               <p>Создайте заявку</p>
               <form action="">
-                <input
-                  type="text"
-                  v-bind:value="valueName"
-                  v-on:input="inputName"
-                  placeholder="Как зовут вашего питомца?"
-                />
-                <input
-                  type="text"
-                  v-bind:value="valueService"
-                  v-on:input="inputService"
-                  placeholder="Услуга"
-                />
+                <input type="text" v-bind:value="valueName" v-on:input="inputName" placeholder="Как зовут вашего питомца?"/>
+                <input type="text" v-bind:value="valueService" v-on:input="inputService" placeholder="Услуга"/>
                 <button type="button" v-on:click="submissionForm">
                   <p>Записаться</p>
                 </button>
