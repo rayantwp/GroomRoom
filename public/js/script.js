@@ -12,31 +12,31 @@ start(function () {
         valuePassword: '',
         default: 'В очереди',
         parents: [{
-          img: 'img/doggie3.jpg',
+          img: 'public/img/doggie3.jpg',
           nickname: 'Белла',
           service: 'Педикюр',
           status: 'Готово!',
         },
         {
-          img: 'img/doggie2.jpg',
+          img: 'public/img/doggie2.jpg',
           nickname: 'Бонни',
           service: 'Мытье',
           status: 'Готово!',
         },
         {
-          img: 'img/kitty2.jpg',
+          img: 'public/img/kitty2.jpg',
           nickname: 'Рокки',
           service: 'Мытье',
           status: 'Готово!',
         },
         {
-          img: 'img/doggie1.jpg',
+          img: 'public/img/doggie1.jpg',
           nickname: 'Атос',
           service: 'Стрижка',
           status: 'Готово!',
         },
         {
-          img: 'img/kitty1.jpg',
+          img: 'public/img/kitty1.jpg',
           nickname: 'Матильда',
           service: 'Стрижка',
           status: 'Готово!'

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/css/style.css">
     <title>GroomRoom - logIn</title>
   </head>
   <body>
@@ -18,11 +18,11 @@
             </div>
           </div>
           <div class="nav-menu">
-            <a href="index.html">
+            <a href="#">
               <img class="icon" src="icon/home.png" />
               Главная</a
             >
-            <a href="login.html">
+            <a href="#">
               <img class="icon" src="icon/key.png" />
               Вход</a
             >

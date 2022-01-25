@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/css/style.css">
     <title>GroomRoom - Home</title>
   </head>
   <body>
@@ -17,11 +17,11 @@
             </div>
           </div>
           <div class="nav-menu">
-            <a href="index.html">
+            <a href="#">
               <img class="icon" src="icon/home.png" />
               Главная</a
             >
-            <a href="login.html">
+            <a href="#">
               <img class="icon" src="icon/key.png" />
               Вход</a
             >
@@ -69,7 +69,7 @@
         <p>groom-salon.com 2000-2999</p>
       </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/vue.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/vue.js"></script>
   </body>
 </html>

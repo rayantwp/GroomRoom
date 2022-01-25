@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url(fonts/Roboto-Bold.ttf);
+  src: url(/public/fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family: "Roboto-Light";
-  src: url(fonts/Roboto-Light.ttf);
+  src: url(/public/fonts/Roboto-Light.ttf);
 }
 
 h1 p a {
